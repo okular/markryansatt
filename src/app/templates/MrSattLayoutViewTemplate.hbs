@@ -1,0 +1,80 @@
+<div id="container" class="container">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+            <div class="animation-container">
+                <svg width="100%" height="143px" style="width:100%;">
+                    <path class="tri1" d="M11.7 118L9.719 118 72.5 9.259 135.281 118z"></path>
+                    <path class="tri2" d="M12.1 118L9.719 118 54.602 40.259 99.486 118z"></path>
+                    <path class="tri3" d="M48.7 118L46.496 118 72.991 72.11 99.486 118z"></path>
+                </svg>
+            </div>
+        </a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+        <ul class="nav navbar-nav">
+          <li>
+          	<a href="#" data-name="development">
+          		Development
+			</a>
+          </li>
+          <li>Photography</li>
+          <li>Portfolio</li>
+          <li>Contact</li>
+          <li>Resume</li>
+          {{!-- <li>{{#link-to 'design'}}Design{{/link-to}}</li>
+          <li>{{#link-to 'blog'}}Blog{{/link-to}}</li> --}}
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+  <div class="row">
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 naver">
+      <ul id="sidebar" class="nav nav-stacked affix nav_link">
+          <div class="animation-container">
+            <svg width="100%" height="143px" style="width:100%;">
+             <path class="tri1" d="M11.7 118L9.719 118 72.5 9.259 135.281 118z"></path>
+             <path class="tri2" d="M12.1 118L9.719 118 54.602 40.259 99.486 118z"></path>
+             <path class="tri3" d="M48.7 118L46.496 118 72.991 72.11 99.486 118z"></path>
+            </svg>
+          </div>
+          <h1 class="nav_name">Mark Ryan Satt</h1><span class="nav_info">Developer &amp; Designer</span>
+          <li>
+          	<a href="#" data-name="development" class="nav-link">
+          		Development
+			</a>
+          </li>
+          <li>
+			<a href="#" data-name="photography" class="nav-link">
+          		Photography
+			</a>
+          </li>
+          <li>
+			<a href="#" data-name="portfolio" class="nav-link">
+          		Portfolio
+			</a>
+          </li>
+          <li>Contact</li>
+          <li>
+			<a href="#" data-name="resume" class="nav-link">
+          		Resume
+			</a>
+          </li>
+          {{!-- <li>{{#link-to 'design'}}Design{{/link-to}}</li>
+          <li>{{#link-to 'blog'}}Blog{{/link-to}}</li> --}}
+      </ul>
+    </div>
+    <div class="col-lg-9 content-container content-region">    
+    	<div class="development-page-view"></div> 
+    	<div class="portfolio-page-view"></div> 
+    	<div class="resume-page-view"></div> 
+    </div>
+  </div>
+</div>
