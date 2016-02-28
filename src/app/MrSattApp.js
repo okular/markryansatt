@@ -7,26 +7,7 @@ import MrSattLayoutView from './views/MrSattLayoutView';
 export default class App extends Marionette.Application{
 	initialize() {
 		this.application = new Marionette.Application();
-
-		// this.application.navigate(route, options) {
-		// 	options || (opitons = {});
-		// 	Backbone.history.navigate(route, options);
-		// };
-
-		// this.application.getCurrentRoute(){
-		// 	return Backbone.history.fragment;
-		// };
-
-		// this.application.on('start'){
-		// 	if(Backbone.history){
-		// 	    Backbone.history.start();
-
-		// 	    if(this.getCurrentRoute() === ""){
-		// 	      ContactManager.trigger("contacts:list");
-		// 	    }
-		// 	  }
-		// };
-
+	
 		this.application.addRegions({
 			main: "#mr-satt"
 		});

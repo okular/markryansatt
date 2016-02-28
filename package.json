@@ -16,11 +16,11 @@
     "start": "gulp",
     "test": "karma start"
   },
-  "author": "@sabarasaba <rivasign@gmail.com>",
+  "author": "@okular <okularco@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/sabarasaba/modern-backbone-starterkit.git"
+    "url": "git://github.com/okular/modern-backbone-starterkit.git"
   },
   "devDependencies": {
     "babel-core": "^6.1.2",

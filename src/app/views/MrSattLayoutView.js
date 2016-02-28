@@ -33,11 +33,10 @@ export default class MrSattLayoutView extends Marionette.LayoutView{
 	}
 
 	onRender() {
-		if( ! Backbone.History.started) Backbone.history.start();
+		if( ! Backbone.History.started) Backbone.history.start({ pushState: true });
 	}
 
 	initialize(options) {
-		debugger;
 		this.initRouter();
 
 		this.resumeModel = new ResumeModel(options.data.resume);
@@ -79,62 +78,120 @@ export default class MrSattLayoutView extends Marionette.LayoutView{
 			model: this.models[modelName]
 		}));
 
+		this._navigateToRoute(navName);
+	}
+
+	_navigateToRoute(navName) {
+		Backbone.history.navigate(navName, {trigger: true});
 	}
 
 	initRouter() {
-
-		// cache reference to 'this' in the module scope
-		var capturedThis = this;
-
-		// assign route handlers to specific routes.
-		// In this case, 'home' is triggered when the browser
-		// visits index.html#home. Likewise index.html#info.
-		// the empty set is for an address with no hash.
-		var appRouteHandler = {
-				'' : 'onHomeRoute',
-			'home' : 'onHomeRoute',
-			'info' : 'onInfoRoute'
-		}
-
-		// controller which contains the methods which
-		// are used as route handlers. These are referenced
-		// in the appRoutes object above.
-		var appRouterController = {
-			onHomeRoute: function() {
-				capturedThis.onHomeNavigated();
+		this.router = Backbone.Router.extend({
+			routes : {
+			'' 		  	  : 'onHomeRoute',
+			'development' : 'onDevelopmentRoute',
+			'photography' : 'onPhotographyRoute',
+			'portfolio'   : 'onPortfolioRoute',
+			'contact'     : 'onContactRoute',
+			'resume' 	  : 'onResumeRoute'
 			},
-			onInfoRoute: function() {
-				capturedThis.onInfoNavigated();
-			}
-		};
 
-		// define an AppRouter constructor
-		var router = Marionette.AppRouter.extend({});
 
-		// create a new instance of the AppRouter
-		// and assign the routes and controller
-		var appRouter = new router({
-			appRoutes: appRouteHandler, 
-			controller: appRouterController
-		});
+		})
 	}
 
-	onHomeNavigated() {
-		// // define and display an instance of the HomeLayoutView
-		// var homeLayoutView = new module.HomeLayoutView();
-		// this.contentRegion.show(homeLayoutView);
+	// initRouter() {
+	// 	debugger;
+	// 	// cache reference to 'this' in the module scope
+	// 	var capturedThis = this;
 
-		// // update the navigation
-		// this.$el.find('.navButton.active').removeClass('active');
-		// this.ui.navHome.addClass('active');
-	}
+	// 	// assign route handlers to specific routes.
+	// 	// In this case, 'home' is triggered when the browser
+	// 	// visits index.html#home. Likewise index.html#info.
+	// 	// the empty set is for an address with no hash.
+	// 	var appRouteHandler = {
+	// 		'' 		  	  : 'onHomeRoute',
+	// 		'development' : 'onDevelopmentRoute',
+	// 		'photography' : 'onPhotographyRoute',
+	// 		'portfolio'   : 'onPortfolioRoute',
+	// 		'contact'     : 'onContactRoute',
+	// 		'resume' 	  : 'onResumeRoute'
+	// 	}
 
-	/* called when the router sees that we have met the criteria
-		to trigger the 'onInfoRoute' handler */
-	onInfoNavigated() {
-		// var infoLayoutView = new module.InfoLayoutView();
-		// this.contentRegion.show(infoLayoutView);
-		// this.$el.find('.navButton.active').removeClass('active');
-		// this.ui.navInfo.addClass('active');
-	}
+	// 	// controller which contains the methods which
+	// 	// are used as route handlers. These are referenced
+	// 	// in the appRoutes object above.
+	// 	var appRouterController = {
+	// 		onHomeRoute: function() {
+	// 			debugger;
+	// 			capturedThis.onHomeNavigated();
+	// 		},
+	// 		onDevelopmentRoute: function() {
+	// 			debugger;
+	// 			capturedThis.onDevelopmentNavigated();
+	// 		},
+	// 		onPhotographyRoute: function() {
+	// 			capturedThis.onPhotographyNavigated();
+	// 		},
+	// 		onPortfolioRoute: function() {
+	// 			capturedThis.onPortfolioNavigated();
+	// 		},
+	// 		onContactRoute: function() {
+	// 			capturedThis.onContactNavigated();
+	// 		},
+	// 		onResumeRoute: function() {
+	// 			capturedThis.onResumeNavigated();
+	// 		}
+	// 	};
+
+	// 	// define an AppRouter constructor
+	// 	var router = Backbone.Router.extend({});
+
+	// 	// create a new instance of the AppRouter
+	// 	// and assign the routes and controller
+	// 	var appRouter = new router({
+	// 		appRoutes: appRouteHandler, 
+	// 		controller: appRouterController
+	// 	});
+	// }
+
+	// onDevelopmentNavigated() {	
+	// 	debugger;
+	// }
+
+	// onPhotographyNavigated() {
+
+	// }
+
+	// onPortfolioNavigated() {
+
+	// }
+
+	// onContactNavigated() {
+
+	// }
+
+	// onResumeNavigated() {
+
+	// }
+
+	// onHomeNavigated() {
+	// 	debugger;
+	// 	// // define and display an instance of the HomeLayoutView
+	// 	// var homeLayoutView = new module.HomeLayoutView();
+	// 	// this.contentRegion.show(homeLayoutView);
+
+	// 	// // update the navigation
+	// 	// this.$el.find('.navButton.active').removeClass('active');
+	// 	// this.ui.navHome.addClass('active');
+	// }
+
+	// /* called when the router sees that we have met the criteria
+	// 	to trigger the 'onInfoRoute' handler */
+	// onInfoNavigated() {
+	// 	// var infoLayoutView = new module.InfoLayoutView();
+	// 	// this.contentRegion.show(infoLayoutView);
+	// 	// this.$el.find('.navButton.active').removeClass('active');
+	// 	// this.ui.navInfo.addClass('active');
+	// }
 };
