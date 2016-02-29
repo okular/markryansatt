@@ -118,6 +118,9 @@ export default class App extends Marionette.Application{
 					        "skill": "MySql"
 					    },
 					    {
+					    	"skill": "mongodb"
+					    },
+					    {
 					        "skill": "React"
 					    },
 					    {
@@ -130,13 +133,25 @@ export default class App extends Marionette.Application{
 					        "skill": "Responsive"
 					    },
 					    {
-					        "skill": "Single"
+					        "skill": "Single Page Applications"
 					    },
 					    {
-					        "skill": "Page"
+					    	"skill": "Components"
 					    },
 					    {
-					        "skill": "Applications"
+					    	"skill": "Modules"
+					    },
+					    {
+					    	"skill": "Python"
+					    },
+					    {
+					    	"skill": "Tornado"
+					    },
+					    {
+					    	"skill": "Koa"
+					    },
+					    {
+					    	"skill": "Continuous Integration"
 					    },
 					    {
 					        "skill": "Architecting"
