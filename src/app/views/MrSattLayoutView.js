@@ -33,10 +33,12 @@ export default class MrSattLayoutView extends Marionette.LayoutView{
 	}
 
 	onRender() {
+		debugger;
 		if( ! Backbone.History.started) Backbone.history.start({ pushState: true });
 	}
 
 	initialize(options) {
+		debugger;
 		this.initRouter();
 
 		this.resumeModel = new ResumeModel(options.data.resume);
@@ -88,12 +90,12 @@ export default class MrSattLayoutView extends Marionette.LayoutView{
 	initRouter() {
 		this.router = Backbone.Router.extend({
 			routes : {
-			'' 		  	  : 'onHomeRoute',
-			'development' : 'onDevelopmentRoute',
-			'photography' : 'onPhotographyRoute',
-			'portfolio'   : 'onPortfolioRoute',
-			'contact'     : 'onContactRoute',
-			'resume' 	  : 'onResumeRoute'
+			'' 		  	  : '_navigateToRoute',
+			'development' : '_navigateToRoute',
+			'photography' : '_navigateToRoute',
+			'portfolio'   : '_navigateToRoute',
+			'contact'     : '_navigateToRoute',
+			'resume' 	  : '_navigateToRoute'
 			},
 
 

@@ -29,6 +29,16 @@
   left: 0;*/
 }
 
+.flipper:hover .front {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+}
+
+.flipper:hover .back {
+  -webkit-backface-visibility: visible;
+  -moz-backface-visibility: visible;
+}
+
 .front {
   z-index: 1;
 }

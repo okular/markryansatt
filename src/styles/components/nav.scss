@@ -16,13 +16,11 @@
 
 .nav > li {
   font-family: 'Crimson Text', serif;
-  letter-spacing: 1px;
   font-style: italic;
   font-size: .8em;
   list-style: none;
   margin: .4em 0;
   color: #000;
-  /*//display: table;*/
   width: -moz-fit-content;
   width: -webkit-fit-content;
   width: fit-content;
@@ -122,15 +120,16 @@
 .nav>li>a.active:after {
     content: "]";
     font-style: normal;
-    left: 101%;
     position: absolute;
+    left: 101%;
     opacity: 1;
+    top: 4px;
   }
 
   .nav>li>a.active:before {
     content: "[";
     font-style: normal;
-    left: -8%;
     position: absolute;
+    left: -8%;
     opacity: 1;
   }
