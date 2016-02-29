@@ -8,6 +8,7 @@ import DevelopmentPageView from '../views/DevelopmentPageView';
 import PhotographyPageView from '../views/PhotographyPageView';
 import PortfolioPageView from '../views/PortfolioPageView';
 import ResumePageView from '../views/ResumePageView';
+import ContactPageView from '../views/ContactPageView';
 
 import ResumeModel from '../models/ResumeModel';
 import PortfolioModel from '../models/PortfolioModel';
@@ -28,6 +29,7 @@ export default class MrSattLayoutView extends Marionette.LayoutView{
 			photographyPageView: ".photography-page-view",
 			portfolioPageView: ".portfolio-page-view",
 			resumePageView: ".resume-page-view",
+			contactPageView: ".contact-page-view",
 			contentRegion: '.content-region'
 		}
 	}
@@ -47,7 +49,8 @@ export default class MrSattLayoutView extends Marionette.LayoutView{
 			'developmentPageView' : DevelopmentPageView,
 			'photographyPageView' : PhotographyPageView,
 			'portfolioPageView': PortfolioPageView,
-			'resumePageView': ResumePageView
+			'resumePageView': ResumePageView,
+			'contactPageView': ContactPageView
 		}
 		
 		this.models = {

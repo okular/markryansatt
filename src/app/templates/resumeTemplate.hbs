@@ -1,18 +1,19 @@
-<dl class="">
-	<dt>
-	  {{model.name}}
-	</dt>
-	<dd>
-	  {{model.email}}
-	</dd>
-	<dt>
-	  {{model.experienceHeader}}
-	</dt>
-	<dd>
-	  {{model.experienceText}}
-	</dd>
-</dl>
-
+<h2 class="portfolio-header">
+	Resume
+</h2>
+<section>
+	<dl class="">
+		<dt>
+		  {{model.name}}
+		</dt>
+		<dt>
+		  {{model.experienceHeader}}
+		</dt>
+		<dd>
+		  {{model.experienceText}}
+		</dd>
+	</dl>
+</section>
 <!-- {{project.workHeader}} -->
 {{#each model.jobs as |job|}}
 	<section>
@@ -32,3 +33,16 @@
 	  </dl>
 	</section>
 {{/each}}
+
+<h2 class="portfolio-header">
+	Skills
+</h2>
+<section class="resume-skills">
+    <ul class="resume-skills--list">
+     {{#each model.skills as |skill|}}
+	      <li>
+	      	{{skill.skill}}
+	      </li>
+      {{/each}}
+    </ul>
+</section>

@@ -1,0 +1,15 @@
+.resume-skills--list {
+	padding: 0;
+	float: left;
+	list-style: none;
+
+	li {
+		float: left;
+		padding: 1rem; 
+		&:after {
+			content: "/";
+    		position: relative;
+    		left: 11%;
+		}
+	}
+}

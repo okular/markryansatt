@@ -6,7 +6,7 @@ import MrSattLayoutView from './views/MrSattLayoutView';
 
 export default class App extends Marionette.Application{
 	initialize() {
-		
+
 		this.application = new Marionette.Application();
 	
 		this.application.addRegions({
@@ -70,6 +70,101 @@ export default class App extends Marionette.Application{
 				        position: 'Web Developer/Designer',
 				        description: 'Interned here, then got hired. Was in charge of interactive department. Main duties consisted of a project getting interactive maps for the entire state of Minnestoa online. Seemingly dealt with every type of file, code, or edge case imaginable. Designed and developed hundreds of interactive banner ads. Updated/created web sites, blogs, and CMS systems. Did a lot more than my job description would describe.'
 				      }
+				    ],
+				    skills: [
+				    	{
+					        "skill": "Html"
+					    },
+					    {
+					        "skill": "Css"
+					    },
+					    {
+					        "skill": "Javascript"
+					    },
+					    {
+					        "skill": "Backbone"
+					    },
+					    {
+					        "skill": "Grunt"
+					    },
+					    {
+					        "skill": "Ember"
+					    },
+					    {
+					        "skill": "Node.js"
+					    },
+					    {
+					        "skill": "Ajax"
+					    },
+					    {
+					        "skill": "Testing"
+					    },
+					    {
+					        "skill": "Seo"
+					    },
+					    {
+					        "skill": "Wordpress"
+					    },
+					    {
+					        "skill": "Photoshop"
+					    },
+					    {
+					        "skill": "Illustrator"
+					    },
+					    {
+					        "skill": "Ui+Ux"
+					    },
+					    {
+					        "skill": "MySql"
+					    },
+					    {
+					        "skill": "React"
+					    },
+					    {
+					        "skill": "Tdd"
+					    },
+					    {
+					        "skill": "Less+Sass"
+					    },
+					    {
+					        "skill": "Responsive"
+					    },
+					    {
+					        "skill": "Single"
+					    },
+					    {
+					        "skill": "Page"
+					    },
+					    {
+					        "skill": "Applications"
+					    },
+					    {
+					        "skill": "Architecting"
+					    },
+					    {
+					        "skill": "Lead Development"
+					    },
+					    {
+					        "skill": "Git"
+					    },
+					    {
+					        "skill": "Ruby on Rails"
+					    },
+					    {
+					        "skill": "Webpack"
+					    },
+					    {
+					        "skill": "Templating"
+					    },
+					    {
+					        "skill": "Api’s"
+					    },
+					    {
+					        "skill": "Scaffolding"
+					    },
+					    {
+					        "skill": "Agile"
+					    }
 				    ]
 				}
 			],
