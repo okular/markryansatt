@@ -1,0 +1,20 @@
+{{#each model as |project|}}
+  <section class="portfolio-container" data-name={{project.title}}>
+    <h2 class="portfolio-header">
+      {{project.title}}
+    </h2>
+    <p class="portfolio-copy">
+      {{project.description}}
+    </p>
+    <ul class="portfolio-skills">
+        {{#each project.skills as |skill|}}
+          <li>
+              {{skill}}
+          </li>
+        {{/each}}
+    </ul>
+    {{#each project.images as |image|}}
+      <img src="{{image.imgUrl}}" alt="{{project.description}}" />
+    {{/each}}
+  </section>
+{{/each}}

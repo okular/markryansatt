@@ -1,0 +1,34 @@
+<dl class="">
+	<dt>
+	  {{model.name}}
+	</dt>
+	<dd>
+	  {{model.email}}
+	</dd>
+	<dt>
+	  {{model.experienceHeader}}
+	</dt>
+	<dd>
+	  {{model.experienceText}}
+	</dd>
+</dl>
+
+<!-- {{project.workHeader}} -->
+{{#each model.jobs as |job|}}
+	<section>
+	  <dl class="">
+	    <dt>
+	      {{job.title}}
+	    </dt>
+	    <dd class="resume__date">
+	      {{job.dates}}
+	    </dd>
+	    <dt class="resume-experience">
+	      {{job.position}}
+	    </dt>
+	    <dd>
+	      {{job.description}}
+	    </dd>
+	  </dl>
+	</section>
+{{/each}}
