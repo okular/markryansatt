@@ -395,14 +395,16 @@ export default class App extends Marionette.Application{
 				  },
 				  {
 				    title: "Kozlaks Royal Oak",
-				    description: "Tarmac needed a site that matched their modern personality and cutting edge development.  I fully designed, created and developed a custom website that leveraged animations and modern design to help peak a visitors interest.  The result was a very fun and modern responsive webpage.  I also developed a custom Backend Rails Applicaiton for the Tarmac team that allowed for project management, project status, developer/client communication and much more.",
+				    description: "Kozlaks was in need of a website where they were able to present their restaurant appropriately, list there long list of services, and highlight their extensive lists of food and beverages.  A custom CMS solution was implemented to allow them to edit and maintain menus and changing specials as things change quickly in the restaurant industry.  I also designed and conducted photography for the website and various design related elements for both print and web.",
 				    skills: [
 				      "Html",
 				      "Css",
 				      "Css Animations",
 				      "Rails",
 				      "Javascript",
-				      "Design"
+				      "Design",
+				      "Photography",
+				      "Custom Events Calendar"
 				    ],
 				    images: [
 				      {
