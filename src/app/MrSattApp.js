@@ -41,6 +41,12 @@ export default class App extends Marionette.Application{
 				    workHeader: 'Experience',
 				    jobs: [
 				      {
+				        title: 'Float Left / Okulär',
+				        dates: 'April 2011 - Current',
+				        position: 'Web Developer/Designer/Consulting/Freelance/Business Development',
+				        description: 'Have two seperate consulting/design + development companies that specialize in different areas.  Both are focused on high end web development and design work, integrating with photography, video, arduino, hardware and software solutions for companies + clients of any size.  An emphasis on all encompassing golf course/country club solutions is the focus of Okulär.'
+				      },
+				      {
 				        title: 'Best Buy',
 				        dates: 'Dec. 2012 - Current',
 				        position: 'Web Developer/Designer',
