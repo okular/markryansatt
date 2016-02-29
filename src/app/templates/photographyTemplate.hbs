@@ -1,1 +1,10 @@
-photography
+<h2 class="portfolio-header">
+	Photography
+</h2>
+{{#each model as |project|}}
+  <section class="photography-container" data-name={{project.title}}>
+    {{#each project.images as |image|}}
+      <img src="{{image.imgUrl}}" alt="{{project.description}}" />
+    {{/each}}
+  </section>
+{{/each}}

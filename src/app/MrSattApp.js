@@ -6,6 +6,7 @@ import MrSattLayoutView from './views/MrSattLayoutView';
 
 export default class App extends Marionette.Application{
 	initialize() {
+		
 		this.application = new Marionette.Application();
 	
 		this.application.addRegions({
@@ -22,6 +23,15 @@ export default class App extends Marionette.Application{
 
 	_getInitializedView() {
 		let bootstrappedData = {
+			"photography":[
+				{
+					images: [
+				      {
+				        imgUrl: 'static/images/portfolio/wbyc1.jpg'
+				      }
+				    ]
+				}
+			],
 			"resume":[
 				{
 				    name: "Mark Ryan Satt",

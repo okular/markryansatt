@@ -11,7 +11,7 @@ import ResumePageView from '../views/ResumePageView';
 
 import ResumeModel from '../models/ResumeModel';
 import PortfolioModel from '../models/PortfolioModel';
-
+import PhotographyModel from '../models/PhotographyModel';
 
 export default class MrSattLayoutView extends Marionette.LayoutView{
 	get template() { return MrSattLayoutViewTemplate }
@@ -33,16 +33,15 @@ export default class MrSattLayoutView extends Marionette.LayoutView{
 	}
 
 	onRender() {
-		debugger;
 		if( ! Backbone.History.started) Backbone.history.start({ pushState: true });
 	}
 
 	initialize(options) {
-		debugger;
 		this.initRouter();
 
 		this.resumeModel = new ResumeModel(options.data.resume);
-		this.portfolioModel = new PortfolioModel(options.data.portfolio)
+		this.portfolioModel = new PortfolioModel(options.data.portfolio);
+		this.photographyModel = new PhotographyModel(options.data.photography);
 
 		this.views = {
 			'developmentPageView' : DevelopmentPageView,
@@ -52,8 +51,9 @@ export default class MrSattLayoutView extends Marionette.LayoutView{
 		}
 		
 		this.models = {
-			'resumeModel' : this.resumeModel,
-			'portfolioModel' : this.portfolioModel
+			'resumeModel' 		: this.resumeModel,
+			'portfolioModel' 	: this.portfolioModel,
+			'photographyModel' 	: this.photographyModel
 		}
 	}
 

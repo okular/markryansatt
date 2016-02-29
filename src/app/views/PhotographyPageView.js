@@ -8,4 +8,11 @@ export default class PhotographyPageView extends Marionette.ItemView{
 
   get template() { return template; }
 
+  serializeData() {
+  	//debugger;
+    return {
+      //fix this
+      model: this.model.toJSON()
+    };
+  }
 };
