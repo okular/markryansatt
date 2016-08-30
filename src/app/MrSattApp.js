@@ -94,13 +94,13 @@ export default class App extends Marionette.Application{
 					        "skill": "Javascript"
 					    },
 					    {
-					        "skill": "Backbone"
+					        "skill": "Backbone.js"
 					    },
 					    {
 					        "skill": "Grunt"
 					    },
 					    {
-					        "skill": "Ember"
+					        "skill": "Ember.js"
 					    },
 					    {
 					        "skill": "Node.js"
@@ -133,7 +133,7 @@ export default class App extends Marionette.Application{
 					    	"skill": "mongodb"
 					    },
 					    {
-					        "skill": "React"
+					        "skill": "React.js"
 					    },
 					    {
 					        "skill": "Tdd"
@@ -191,6 +191,21 @@ export default class App extends Marionette.Application{
 					    },
 					    {
 					        "skill": "Agile"
+					    },
+					    {
+					    	"skill": "Angular.js"
+					    },
+					    {
+					    	"skill": "Riot.js"
+					    },
+					    {
+					    	"skill": "Redux"
+					    },
+					    {
+					    	"skill": "Npm"
+					    },
+					    {
+					    	"skill": "Bower"
 					    }
 				    ]
 				}
@@ -241,6 +256,33 @@ export default class App extends Marionette.Application{
 				      },
 				      {
 				        imgUrl: 'static/images/portfolio/ws-4.jpg'
+				      }
+				    ]
+				  },
+				  {
+				    title: "Medtronic Connect",
+				    description: "Worked on an internationl e-commerce platform for Medtronic, built a ground-up platform for the Front End that kept scability in mind while architecting the app so that teams all over the world could easily re-use and extend the core application.  Leveraged web components with Riots.js and Redux to allow for maximum flexibility and scoping of components and managing state/data between views/application.  Also a custom inventory management tool/application is built in for users to keep track of or update stock of inventory for hospitals.",
+				    skills: [
+				      "Node.js",
+				      "Html",
+				      "Css",
+				      "Javascript",
+				      "Riot.js",
+				      "Web Components",
+				      "Responsive Design & Development"
+				    ],
+				    images: [
+				      {
+				        imgUrl: 'static/images/portfolio/med-1.png'
+				      },
+				      {
+				        imgUrl: 'static/images/portfolio/med-2.png'
+				      },
+				      {
+				        imgUrl: 'static/images/portfolio/med-3.png'
+				      },
+				      {
+				      	imgUrl: 'static/images/portfolio/med-4.png'
 				      }
 				    ]
 				  },
