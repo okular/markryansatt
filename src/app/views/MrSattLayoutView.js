@@ -35,7 +35,7 @@ export default class MrSattLayoutView extends Marionette.LayoutView{
 	}
 
 	onRender() {
-		if( ! Backbone.History.started) Backbone.history.start({ pushState: true });
+		if( ! Backbone.History.started) Backbone.history.start();
 	}
 
 	initialize(options) {
@@ -73,12 +73,6 @@ export default class MrSattLayoutView extends Marionette.LayoutView{
 		var pageView = navName + 'PageView';
 		var modelName = navName + 'Model';
 
-		// var viewToHide = _.findWhere(this.views, {_isShown : true });
-		// if(viewToHide) { viewToHide.destroy(); }
-
-		//this.contentRegion.show(this.views[pageView]);
-		//this.getRegion(pageView).show(this.views[pageView]);
-
 		this.contentRegion.show(new this.views[pageView]({
 			model: this.models[modelName]
 		}));
@@ -87,23 +81,53 @@ export default class MrSattLayoutView extends Marionette.LayoutView{
 	}
 
 	_navigateToRoute(navName) {
+		console.log(navName);
 		Backbone.history.navigate(navName, {trigger: true});
 	}
 
+	// initRouter() {
+	// 	this.router = Marionette.AppRouter.extend({
+	// 		routes : {
+	// 		'' 		  	  : '_navigateToRoute',
+	// 		'development' : '_navigateToRoute',
+	// 		'photography' : '_navigateToRoute',
+	// 		'portfolio'   : '_navigateToRoute',
+	// 		'contact'     : '_navigateToRoute',
+	// 		'resume' 	  : '_navigateToRoute'
+	// 		}
+	// 	});
+	// }
+
 	initRouter() {
-		this.router = Backbone.Router.extend({
-			routes : {
-			'' 		  	  : '_navigateToRoute',
-			'development' : '_navigateToRoute',
-			'photography' : '_navigateToRoute',
-			'portfolio'   : '_navigateToRoute',
-			'contact'     : '_navigateToRoute',
-			'resume' 	  : '_navigateToRoute'
-			},
+		var capturedThis = this;
 
+		var appRouteHandler = {
+			'' 				: 'navigateToRoute',
+			'development' 	: 'navigateToRoute',
+			'photography' 	: 'navigateToRoute',
+			'portfolio' 	: 'navigateToRoute',
+			'contact'     	: 'navigateToRoute',
+			'resume' 	  	: 'navigateToRoute'
+		}
 
-		})
+		var appRouterController = {
+			navigateToRoute: function() {
+				var viewName = location.hash.replace(/\#/g, "");
+				capturedThis._renderPageView(viewName);
+			}
+		}
+
+		// define an AppRouter constructor
+		var router = Marionette.AppRouter.extend({});
+
+		// create a new instance of the AppRouter
+		// and assign the routes and controller
+		var appRouter = new router({
+			appRoutes: appRouteHandler, 
+			controller: appRouterController
+		});
 	}
+
 
 	// initRouter() {
 	// 	debugger;

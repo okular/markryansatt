@@ -47,9 +47,15 @@ export default class App extends Marionette.Application{
 				        description: 'Have two seperate consulting/design + development companies that specialize in different areas.  Both are focused on high end web development and design work, integrating with photography, video, arduino, hardware and software solutions for companies + clients of any size.  An emphasis on all encompassing golf course/country club solutions is the focus of Okulär.'
 				      },
 				      {
+				        title: 'Medtronic',
+				        dates: 'March 2016 - Current',
+				        position: 'Lead Web Developer',
+				        description: 'Working with an international team to develop a scalable, international e-commerce platform for Medtonic customers and businesses.  Utilizing Riot.js to build a mantainable, scalable, and compliant set of components that can be shared, extended and re-used for teams all over the world.  Incorporating unit tests, continuous deployment and integration is essential to keep teams in different time zones on track and working in an effcient manner.  Leveraging git to keep a maintable workstream amongst teams so they can work in parrallel on different features.  Using webpack for configuration and to simplify integration with Riot and web components to reduce complexity and maximize re-usability of code.  Leveraging sass to help create a skinnable theme to allow for different color schemes based off of a base set of styles for different applications.'
+				      },
+				      {
 				        title: 'Best Buy',
 				        dates: 'Dec. 2012 - Current',
-				        position: 'Web Developer/Designer',
+				        position: 'Lead Web Developer/Designer',
 				        description: 'Work on the development team producing various projects for different divisions of the company. My role requires a knowledge and working practice of such technologies such as Freemarker, Dust, Grunt, Sass/Less, Node, Ajax, JSON and a heavy amount of Backbone/Marionette. I get to design and develop at various levels depending on the need of the particular project. I have developed/designed enterprise level websites and applications used by millions of people for various divisions of the company utilizing all of my skills and talents.  I also have been building a style guide, refactoring all css and html markup to be used site/company wide.  I have built several components that are also being used and shared across engineering teams.'
 				      },
 				      {
@@ -61,13 +67,13 @@ export default class App extends Marionette.Application{
 				      {
 				        title: 'U4EA Design',
 				        dates: 'February 2010 - February 2012',
-				        position: 'Web Developer/Designer',
+				        position: 'Lead Web Developer/Designer',
 				        description: 'Web Developer/Designer Involved in all aspects of projects for clients ranging from graphic design to interactive components, website design, and implementation of designs onto the web. I was also in charge of day-to-day maintenance, projections, budgeting and managing departments personnel and resources. Specialized in building sites with Wordpress as a CMS. I worked closely with clients and partners to create websites that were visually appealing as well as functional.'
 				      },
 				      {
 				        title: 'Koechel Peterson',
 				        dates: 'April 2008 - January 2010',
-				        position: 'Web Developer/Designer',
+				        position: 'Lead Web Developer/Designer',
 				        description: 'Was the lead developer and in charge of all aspects of the develoment department. From conception of ideas and designing to implementation of coding and taking care of server issues/maintenance. Also kept e-commerce sites up to date along with forums, blogs, designs, keeping stats on analytics, designing/coding emails, customer relations and much more.'
 				      },
 				      {
