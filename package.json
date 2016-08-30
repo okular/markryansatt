@@ -14,7 +14,9 @@
   "main": "index.html",
   "scripts": {
     "start": "gulp",
-    "test": "karma start"
+    "test": "karma start",
+    "deploy": "gh-pages-deploy",
+    "clean-source": "rimraf README.md src webroot package.json"
   },
   "author": "@okular <okularco@gmail.com>",
   "license": "MIT",
@@ -59,6 +61,7 @@
     "lodash": "^3.5.0"
   },
   "gh-pages-deploy": {
-    "staticpath": "dist"
+    "staticpath": "dist",
+    "noprompt": true
   }
 }
