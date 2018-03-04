@@ -10,7 +10,6 @@ export default class ResumePageView extends Marionette.ItemView{
 
   serializeData() {
     return {
-      //fix this
       model: this.model.toJSON()[0]
     };
   }
