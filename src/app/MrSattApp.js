@@ -18,10 +18,10 @@ export default class App extends Marionette.Application {
 
         this.application.start();
 
-<<<<<<< HEAD
+
         return this;
     };
-=======
+
 	_getInitializedView() {
 		let bootstrappedData = {
 			"photography":[
@@ -577,8 +577,9 @@ export default class App extends Marionette.Application {
 				    ]
 				 }
 			]
-		}
->>>>>>> fb382e37c9085460d94d0b5841e772e2635271b4
+        }
+    };
+
 
     _getInitializedView() {
         let bootstrappedData = {
