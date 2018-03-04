@@ -9,7 +9,10 @@
 	Stay tuned. I will be posting up more of my photographs shortly.
 </p>
 {{#each model as |project|}}
-  <section class="photography-container" data-name={{project.title}}>
+  <section class="photography-container" data-name="{{project.title}}">
+      <h2>
+          {{project.title}}
+      </h2>
     {{#each project.images as |image|}}
       <img src="{{image.imgUrl}}" alt="{{project.description}}" />
     {{/each}}
