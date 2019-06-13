@@ -16,7 +16,7 @@ export default Backbone.Router.extend({
 
   development() {
     this.view = new DevelopmentPageView();
-  }
+  },
 
   initialize() {
     $('body').append('<div id="js-app"></div>');

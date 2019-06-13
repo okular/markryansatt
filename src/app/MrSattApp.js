@@ -96,7 +96,13 @@ export default class App extends Marionette.Application {
 					    },
 					    {
 					        "skill": "Backbone.js"
-					    },
+              },
+              {
+					        "skill": "TypeScript"
+              },
+              {
+                "skill": "ES6 / 7"
+              },
 					    {
 					        "skill": "Grunt"
 					    },
@@ -212,6 +218,35 @@ export default class App extends Marionette.Application {
 				}
 			],
 			"portfolio":[
+        {
+          title: "Conservis",
+          description: "Worked on transforming and building a front-end platform for a software company in the agriculture industry.  They were previously in a mess of using Struts, Backbone, Knockout, jQuery and just about every other FE framework used over the past 10 years.  I was tasked with building a modern, scalable platform for their software platform to make everything easier.  I chose React, Redux, Typescript, SASS, Jest etc. and couldn't have been more pleased. Their software is data / form heavy ( like really heavy ) and i chose these frameworks because i wanted JSON to drive the pages for quick rendering, easy diffing, quick deploys and straight forward code. The result was a platform with shareable components, style guides, well tested, reasonable components and much quicker build and deployment times.  Also built a custom shape fiel tool that allowed farmers to add, create, edit, upload or delete shapes.  They could also create notes / annotations on fields.  This tool was an interesting and educational journey as customizing on this level with google maps api is not common and learned a lot from the experience.",
+          skills: [
+            "Node.js",
+            "Html",
+            "Css",
+            "Javascript",
+            "React",
+            "Redux",
+            "Typescript",
+            "Sass",
+            "Jest",
+            "ES6 / 7",
+            "Web Components",
+            "Responsive Design & Development"
+          ],
+          images: [
+            {
+              imgUrl: 'static/images/portfolio/conservis-1.png'
+            },
+            {
+              imgUrl: 'static/images/portfolio/conservis-2.png'
+            },
+            {
+              imgUrl: 'static/images/portfolio/conservis-3.png'
+            }
+          ]
+        },
 				{
 				    title: "Dairy Queen",
 				    description: "Dairy Queen wanted an application that allowed a user/customer order a customized cake online.  We decided to leverage Angular.js early in its infancy to help with data binding and manage view states.  Worked closely with DQ's development team to ensure data flow and structure was consistent and delivered smoothly.",
@@ -664,6 +699,18 @@ export default class App extends Marionette.Application {
                     workHeader: 'Experience',
                     jobs: [
                         {
+                          title: 'Conservis',
+                          dates: 'July 2017 - Current',
+                          position: 'Lead Web Developer/Designer',
+                          description: 'Working with an international team to create a unified platform for farming software. Have started rewriting the front-end code from scratch with React + Redux + Typescript as well as creating standards for code styling, testing, css, etc. Also creating all new features from inception to completion. I am conducting design, ui + ux and development, while leading a team of developers. I have created a branding living style guide, isolating React components as I build features so they can be used, shared and extended for all team members. In charge of interviewing and hiring developers and managers as well as formulating strategies for streamlining the development process with product owners, product managers, the founders of the company, etc.'
+                        },
+                        {
+                          title: 'Medtronic',
+                          dates: 'April 2016 - July 2017',
+                          position: 'Lead Web Developer/Designer',
+                          description: 'Working with an international team to develop a scalable, international e-commerce platform for Medtonic customers and businesses. Utilizing Riot.js to build a mantainable, scalable, and compliant set of components that can be shared, extended and re-used for teams all over the world. Incorporating unit tests, continuous deployment and integration is essential to keep teams in different time zones on track and working in an effcient manner. Leveraging git to keep a maintable workstream amongst teams so they can work in parrallel on different features. Using webpack for configuration and to simplify integration with Riot and web components to reduce complexity and maximize re-usability of code. Leveraging sass to help create a skinnable theme to allow for different color schemes based off of a base set of styles for different applications.'
+                        },
+                        {
                             title: 'Float Left / Okulär',
                             dates: 'April 2011 - Current',
                             position: 'Web Developer/Designer/Consulting/Freelance/Business Development',
@@ -671,7 +718,7 @@ export default class App extends Marionette.Application {
                         },
                         {
                             title: 'Best Buy',
-                            dates: 'Dec. 2012 - Current',
+                            dates: 'Dec. 2012 - Apr 2016',
                             position: 'Web Developer/Designer',
                             description: 'Work on the development team producing various projects for different divisions of the company. My role requires a knowledge and working practice of such technologies such as Freemarker, Dust, Grunt, Sass/Less, Node, Ajax, JSON and a heavy amount of Backbone/Marionette. I get to design and develop at various levels depending on the need of the particular project. I have developed/designed enterprise level websites and applications used by millions of people for various divisions of the company utilizing all of my skills and talents.  I also have been building a style guide, refactoring all css and html markup to be used site/company wide.  I have built several components that are also being used and shared across engineering teams.'
                         },
@@ -701,118 +748,168 @@ export default class App extends Marionette.Application {
                         }
                     ],
                     skills: [
-                        {
-                            "skill": "Html"
-                        },
-                        {
-                            "skill": "Css"
-                        },
-                        {
-                            "skill": "Javascript"
-                        },
-                        {
-                            "skill": "Backbone"
-                        },
-                        {
-                            "skill": "Grunt"
-                        },
-                        {
-                            "skill": "Ember"
-                        },
-                        {
-                            "skill": "Node.js"
-                        },
-                        {
-                            "skill": "Ajax"
-                        },
-                        {
-                            "skill": "Testing"
-                        },
-                        {
-                            "skill": "Seo"
-                        },
-                        {
-                            "skill": "Wordpress"
-                        },
-                        {
-                            "skill": "Photoshop"
-                        },
-                        {
-                            "skill": "Illustrator"
-                        },
-                        {
-                            "skill": "Ui+Ux"
-                        },
-                        {
-                            "skill": "MySql"
-                        },
-                        {
-                            "skill": "mongodb"
-                        },
-                        {
-                            "skill": "React"
-                        },
-                        {
-                            "skill": "Tdd"
-                        },
-                        {
-                            "skill": "Less+Sass"
-                        },
-                        {
-                            "skill": "Responsive"
-                        },
-                        {
-                            "skill": "Single Page Applications"
-                        },
-                        {
-                            "skill": "Components"
-                        },
-                        {
-                            "skill": "Modules"
-                        },
-                        {
-                            "skill": "Python"
-                        },
-                        {
-                            "skill": "Tornado"
-                        },
-                        {
-                            "skill": "Koa"
-                        },
-                        {
-                            "skill": "Continuous Integration"
-                        },
-                        {
-                            "skill": "Architecting"
-                        },
-                        {
-                            "skill": "Lead Development"
-                        },
-                        {
-                            "skill": "Git"
-                        },
-                        {
-                            "skill": "Ruby on Rails"
-                        },
-                        {
-                            "skill": "Webpack"
-                        },
-                        {
-                            "skill": "Templating"
-                        },
-                        {
-                            "skill": "Api’s"
-                        },
-                        {
-                            "skill": "Scaffolding"
-                        },
-                        {
-                            "skill": "Agile"
-                        }
+                      {
+                          "skill": "Html"
+                      },
+                      {
+                          "skill": "Css"
+                      },
+                      {
+                          "skill": "Javascript"
+                      },
+                      {
+                          "skill": "Backbone.js"
+                      },
+                      {
+                          "skill": "TypeScript"
+                      },
+                      {
+                        "skill": "ES6 / 7"
+                      },
+                      {
+                          "skill": "Grunt"
+                      },
+                      {
+                          "skill": "Ember.js"
+                      },
+                      {
+                          "skill": "Node.js"
+                      },
+                      {
+                          "skill": "Ajax"
+                      },
+                      {
+                          "skill": "Testing"
+                      },
+                      {
+                          "skill": "Seo"
+                      },
+                      {
+                          "skill": "Wordpress"
+                      },
+                      {
+                          "skill": "Photoshop"
+                      },
+                      {
+                          "skill": "Illustrator"
+                      },
+                      {
+                          "skill": "Ui+Ux"
+                      },
+                      {
+                          "skill": "MySql"
+                      },
+                      {
+                        "skill": "mongodb"
+                      },
+                      {
+                          "skill": "React.js"
+                      },
+                      {
+                          "skill": "Tdd"
+                      },
+                      {
+                          "skill": "Less+Sass"
+                      },
+                      {
+                          "skill": "Responsive"
+                      },
+                      {
+                          "skill": "Single Page Applications"
+                      },
+                      {
+                        "skill": "Components"
+                      },
+                      {
+                        "skill": "Modules"
+                      },
+                      {
+                        "skill": "Python"
+                      },
+                      {
+                        "skill": "Tornado"
+                      },
+                      {
+                        "skill": "Koa"
+                      },
+                      {
+                        "skill": "Continuous Integration"
+                      },
+                      {
+                          "skill": "Architecting"
+                      },
+                      {
+                          "skill": "Lead Development"
+                      },
+                      {
+                          "skill": "Git"
+                      },
+                      {
+                          "skill": "Ruby on Rails"
+                      },
+                      {
+                          "skill": "Webpack"
+                      },
+                      {
+                          "skill": "Templating"
+                      },
+                      {
+                          "skill": "Api’s"
+                      },
+                      {
+                          "skill": "Scaffolding"
+                      },
+                      {
+                          "skill": "Agile"
+                      },
+                      {
+                        "skill": "Angular.js"
+                      },
+                      {
+                        "skill": "Riot.js"
+                      },
+                      {
+                        "skill": "Redux"
+                      },
+                      {
+                        "skill": "Npm"
+                      },
+                      {
+                        "skill": "Bower"
+                      }
                     ]
                 }
             ],
             "portfolio": [
+                {
+                  title: "Conservis",
+                  description: "Worked on transforming and building a front-end platform for a software company in the agriculture industry.  They were previously in a mess of using Struts, Backbone, Knockout, jQuery and just about every other FE framework used over the past 10 years.  I was tasked with building a modern, scalable platform for their software platform to make everything easier.  I chose React, Redux, Typescript, SASS, Jest etc. and couldn't have been more pleased. Their software is data / form heavy ( like really heavy ) and i chose these frameworks because i wanted JSON to drive the pages for quick rendering, easy diffing, quick deploys and straight forward code. The result was a platform with shareable components, style guides, well tested, reasonable components and much quicker build and deployment times.  Also built a custom shape fiel tool that allowed farmers to add, create, edit, upload or delete shapes.  They could also create notes / annotations on fields.  This tool was an interesting and educational journey as customizing on this level with google maps api is not common and learned a lot from the experience.",
+                  skills: [
+                    "Node.js",
+                    "Html",
+                    "Css",
+                    "Javascript",
+                    "React",
+                    "Redux",
+                    "Typescript",
+                    "Sass",
+                    "Jest",
+                    "ES6 / 7",
+                    "Web Components",
+                    "Responsive Design & Development"
+                  ],
+                  images: [
+                    {
+                      imgUrl: 'static/images/portfolio/conservis-1.png'
+                    },
+                    {
+                      imgUrl: 'static/images/portfolio/conservis-2.png'
+                    },
+                    {
+                      imgUrl: 'static/images/portfolio/conservis-3.png'
+                    }
+                  ]
+                },
                 {
                     title: "Dairy Queen",
                     description: "Dairy Queen wanted an application that allowed a user/customer order a customized cake online.  We decided to leverage Angular.js early in its infancy to help with data binding and manage view states.  Worked closely with DQ's development team to ensure data flow and structure was consistent and delivered smoothly.",
